@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | ZUT Sports</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
+    <a class="back-link" href="index.html">← Back to home</a>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-side">
+      <p class="eyebrow">JOIN THE COMMUNITY</p>
+      <h1>Every fan belongs.</h1>
+      <p>Create an account form for the ZUT Sports website template.</p>
+    </section>
+    <section class="auth-card">
+      <p class="eyebrow">GET STARTED</p>
+      <h2>Create an account</h2>
+      <p class="muted auth-intro">Fill in the form to try the sign-up interface.</p>
+      <form id="signupForm">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" required>
+        <label for="signupEmail">Email address</label>
+        <input type="email" id="signupEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" name="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password again" autocomplete="new-password" minlength="6" required>
+        <button class="button button-green full-width" type="submit">Create account</button>
+        <p class="form-message" id="signupMessage" role="status"></p>
+      </form>
+      <p class="auth-switch">Already registered? <a href="login.html">Login</a></p>
+      <p class="small muted demo-note">Demo only: no account is created or stored.</p>
+    </section>
+  </main>
+  <footer class="site-footer auth-footer"><p>© <span id="year"></span> ZUT Sports</p></footer>
+</body>
+</html>

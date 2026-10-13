@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ZUT Sports - sports news, teams and stories from ZUT.">
+  <title>ZUT Sports | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+    <nav class="navigation" id="mainNav">
+      <a class="active" href="index.html">Home</a>
+      <a href="#sports">Sports</a>
+      <a href="#articles">Articles</a>
+      <a href="login.html">Login</a>
+      <a class="nav-signup" href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">ZUT • SPORT • COMMUNITY</p>
+        <h1>One campus.<br><span>Many passions.</span></h1>
+        <p>Discover the people, teams and stories shaping sports at ZUT.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#articles">Read sports stories</a>
+          <a class="button button-outline" href="#sports">Explore sports</a>
+        </div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">ZUT</div>
+    </section>
+
+    <section class="section" id="sports">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR GAME</p><h2>Explore sports</h2></div>
+        <p class="muted">A place for every sporting passion.</p>
+      </div>
+      <div class="sports-grid">
+        <article class="sport-card"><span class="sport-icon">⚽</span><h3>Football</h3><p>Teams, training and match stories.</p></article>
+        <article class="sport-card"><span class="sport-icon">🏀</span><h3>Basketball</h3><p>Players, skills and competitions.</p></article>
+        <article class="sport-card"><span class="sport-icon">🏐</span><h3>Volleyball</h3><p>Teamwork and campus action.</p></article>
+        <article class="sport-card"><span class="sport-icon">🏃</span><h3>Athletics</h3><p>Track events and individual talent.</p></article>
+      </div>
+      <p class="small muted note">Template examples only. Replace these with the confirmed list of sports offered at ZUT.</p>
+    </section>
+
+    <section class="section section-tinted" id="articles">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LATEST FROM CAMPUS</p><h2>Sports articles</h2></div>
+        <span class="tag">SAMPLE ARTICLES</span>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-image football-art" aria-hidden="true"><span>⚽</span></div>
+          <div class="article-body">
+            <p class="article-category">FOOTBALL • TEAM SPIRIT</p>
+            <h3>Building teamwork on and off the pitch</h3>
+            <p>A sample article about how student athletes develop communication, discipline and teamwork through football.</p>
+            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-image basketball-art" aria-hidden="true"><span>🏀</span></div>
+          <div class="article-body">
+            <p class="article-category">BASKETBALL • STUDENT LIFE</p>
+            <h3>Balancing sports and academic life</h3>
+            <p>A sample story about managing training, classes, study time and the responsibilities of university life.</p>
+            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-image athletics-art" aria-hidden="true"><span>🏃</span></div>
+          <div class="article-body">
+            <p class="article-category">ATHLETICS • INSPIRATION</p>
+            <h3>Small steps towards stronger performances</h3>
+            <p>A sample feature on consistency, preparation and the effort behind an athlete's progress.</p>
+            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="small muted note">The articles above are placeholder content, not verified reports of actual ZUT events.</p>
+    </section>
+
+    <section class="join-banner">
+      <div><p class="eyebrow">BE PART OF THE COMMUNITY</p><h2>Stay connected with ZUT Sports.</h2><p>Sign up to be part of the sports community.</p></div>
+      <a class="button button-gold" href="signup.html">Create an account</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
+    <p>Celebrating sport and community at ZUT.</p>
+    <p class="small">© <span id="year"></span> ZUT Sports • Website template</p>
+  </footer>
+</body>
+</html>

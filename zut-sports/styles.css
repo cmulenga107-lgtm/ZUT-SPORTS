@@ -1,0 +1,119 @@
+/* ZUT Sports - shared stylesheet */
+:root {
+  --green: #123b2a;
+  --green-light: #0614b3;
+  --gold: #e3b653;
+  --white: #fff;
+  --background: #f5f7f4;
+  --text: #17241d;
+  --muted: #69756d;
+  --border: #e1e6e0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.site-header { min-height: 74px; padding: 13px 6%; display: flex; justify-content: space-between; align-items: center; gap: 20px; background: var(--green); color: var(--white); position: sticky; top: 0; z-index: 10; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 1.08rem; font-weight: 800; letter-spacing: 1px; white-space: nowrap; }
+.brand b { color: var(--gold); }
+.brand-mark { display: grid; place-items: center; width: 40px; height: 40px; border: 2px solid var(--gold); border-radius: 9px; color: var(--gold); font-size: 1.35rem; }
+.navigation { display: flex; align-items: center; gap: 22px; }
+.navigation a, .back-link { font-size: .92rem; }
+.navigation a:hover, .navigation a.active, .back-link:hover { color: var(--gold); }
+.navigation .nav-signup { border: 1px solid var(--gold); padding: 8px 13px; border-radius: 5px; }
+.menu-toggle { display: none; color: var(--white); background: transparent; border: 1px solid #ffffff66; padding: 6px 11px; border-radius: 5px; font-size: 1.3rem; }
+.hero { min-height: 420px; padding: 76px 8%; display: flex; align-items: center; position: relative; overflow: hidden; color: var(--white); background: radial-gradient(ellipse at 85% 20%, #46724c 0, transparent 35%), linear-gradient(115deg, #0d2b20, #20543e); }
+.hero-content { max-width: 650px; position: relative; z-index: 1; }
+.eyebrow { color: #a67c25; font-size: .74rem; font-weight: 800; letter-spacing: 2px; margin-bottom: 11px; }
+.hero .eyebrow, .auth-side .eyebrow { color: var(--gold); }
+.hero h1, .auth-side h1 { font-size: clamp(2.6rem, 7vw, 4.7rem); line-height: 1.06; letter-spacing: -1.5px; margin-bottom: 20px; }
+.hero h1 span { color: var(--gold); }
+.hero-content > p:not(.eyebrow) { max-width: 500px; color: #e0e8e2; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+.hero-decoration { position: absolute; right: 4%; bottom: -75px; font-size: clamp(9rem, 24vw, 20rem); font-weight: 900; color: #ffffff09; pointer-events: none; }
+.button { display: inline-block; padding: 11px 18px; border: 0; border-radius: 6px; font-weight: 700; text-align: center; transition: transform .2s, opacity .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-gold { background: var(--gold); color: var(--green); }
+.button-outline { border: 1px solid #ffffff99; color: var(--white); }
+.button-green { background: var(--green); color: var(--white); }
+.full-width { width: 100%; margin-top: 8px; }
+.section { padding: 64px 7%; }
+.section-tinted { background: var(--background); }
+.section-heading { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 18px; margin-bottom: 26px; }
+.section-heading h2, .join-banner h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; }
+.muted { color: var(--muted); }
+.small { font-size: .82rem; }
+.note { margin-top: 18px; }
+.sports-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 17px; }
+.sport-card { padding: 23px 19px; border: 1px solid var(--border); border-radius: 9px; background: var(--white); transition: transform .2s, box-shadow .2s; }
+.sport-card:hover { transform: translateY(-3px); box-shadow: 0 10px 25px #142c1a10; }
+.sport-icon { display: block; font-size: 2rem; margin-bottom: 10px; }
+.sport-card h3 { margin-bottom: 6px; }
+.sport-card p { color: var(--muted); font-size: .9rem; }
+.tag { font-size: .7rem; letter-spacing: 1px; font-weight: 800; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; border-radius: 5px; }
+.articles-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.article-card { overflow: hidden; background: var(--white); border: 1px solid var(--border); border-radius: 10px; }
+.article-image, .article-feature { min-height: 160px; display: grid; place-items: center; font-size: 3.5rem; }
+.football-art { background: linear-gradient(135deg, #123b2a, #477a4f); }
+.basketball-art { background: linear-gradient(135deg, #7b4a22, #d89b4d); }
+.athletics-art { background: linear-gradient(135deg, #253c60, #7296bd); }
+.article-body { padding: 20px; }
+.article-category { color: #98701f; font-size: .68rem; font-weight: 800; letter-spacing: 1px; margin-bottom: 9px; }
+.article-body h3 { line-height: 1.35; margin-bottom: 9px; }
+.article-body > p:not(.article-category) { color: var(--muted); font-size: .9rem; }
+.read-more { display: inline-block; color: var(--green); font-weight: 700; margin-top: 15px; }
+.read-more:hover { color: #98701f; }
+.join-banner { margin: 50px 7%; padding: 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 22px; border-radius: 10px; background: #eef3ec; }
+.join-banner > div > p:last-child { color: var(--muted); margin-top: 8px; }
+.site-footer { background: #0b251a; color: var(--white); padding: 30px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.site-footer p { color: #c3d0c6; }
+.auth-page { min-height: 100vh; background: var(--background); }
+.auth-layout { width: min(1050px, 90%); min-height: calc(100vh - 140px); margin: 0 auto; padding: 55px 0; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 55px; }
+.auth-side { padding: 20px 0; }
+.auth-side h1 { font-size: clamp(2.4rem, 5vw, 4rem); color: var(--green); }
+.auth-side > p:last-child { color: var(--muted); max-width: 400px; }
+.auth-card { background: var(--white); padding: clamp(24px, 4vw, 40px); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 14px 40px #142c1a0b; }
+.auth-card h2 { font-size: 2rem; }
+.auth-intro { margin: 5px 0 24px; }
+.auth-card form { display: flex; flex-direction: column; }
+.auth-card label { font-size: .9rem; font-weight: 700; margin: 13px 0 6px; }
+.auth-card input { width: 100%; padding: 12px; border: 1px solid #ccd5cc; border-radius: 6px; background: var(--white); color: var(--text); }
+.auth-card input:focus { outline: 2px solid #8aaf91; border-color: var(--green); }
+.auth-switch { text-align: center; margin-top: 20px; font-size: .92rem; }
+.auth-switch a { color: var(--green); font-weight: 800; text-decoration: underline; }
+.demo-note { margin-top: 15px; text-align: center; }
+.form-message { color: var(--green); font-size: .88rem; margin-top: 12px; }
+.auth-footer { justify-content: center; }
+.article-page { width: min(820px, 88%); margin: 55px auto 75px; }
+.article-page h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.15; margin-bottom: 12px; }
+.article-meta { margin-bottom: 24px; font-size: .9rem; }
+.article-feature { min-height: 280px; border-radius: 10px; font-size: 5rem; margin-bottom: 30px; }
+.article-copy { max-width: 700px; margin: auto; }
+.article-copy p { margin-bottom: 18px; }
+.article-copy .lead { font-size: 1.15rem; color: #39483e; }
+.article-copy h2 { margin: 28px 0 10px; font-size: 1.5rem; }
+.article-copy .button { margin-top: 8px; }
+@media (max-width: 950px) {
+  .menu-toggle { display: block; }
+  .navigation { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 18px 6%; background: var(--green); flex-direction: column; align-items: stretch; gap: 14px; }
+  .navigation.open { display: flex; }
+  .navigation a { padding: 4px 0; }
+  .sports-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .articles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .auth-layout { gap: 28px; }
+}
+@media (max-width: 650px) {
+  .site-header { padding: 12px 5%; }
+  .hero { min-height: 390px; padding: 58px 6%; }
+  .section { padding: 48px 6%; }
+  .sports-grid, .articles-grid, .auth-layout { grid-template-columns: 1fr; }
+  .auth-layout { padding: 30px 0 45px; gap: 20px; }
+  .auth-side { padding: 10px 0; }
+  .auth-side h1 { font-size: 2.5rem; }
+  .join-banner { margin: 30px 6%; padding: 24px; }
+  .site-footer { flex-direction: column; align-items: flex-start; }
+  .article-page { margin-top: 35px; }
+  .article-feature { min-height: 200px; }
+}

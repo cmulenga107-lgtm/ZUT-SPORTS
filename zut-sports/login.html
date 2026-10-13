@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ZUT Sports</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
+    <a class="back-link" href="index.html">← Back to home</a>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-side">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Your sports community is waiting.</h1>
+      <p>Sign-in page template for the ZUT Sports website.</p>
+    </section>
+    <section class="auth-card">
+      <p class="eyebrow">YOUR ACCOUNT</p>
+      <h2>Login</h2>
+      <p class="muted auth-intro">Enter your details below.</p>
+      <form id="loginForm">
+        <label for="loginEmail">Email address</label>
+        <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+        <button class="button button-green full-width" type="submit">Login</button>
+        <p class="form-message" id="loginMessage" role="status"></p>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+      <p class="small muted demo-note">Demo only: this form does not authenticate users.</p>
+    </section>
+  </main>
+  <footer class="site-footer auth-footer"><p>© <span id="year"></span> ZUT Sports</p></footer>
+</body>
+</html>
