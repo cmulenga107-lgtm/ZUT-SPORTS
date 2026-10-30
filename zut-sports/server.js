@@ -88,8 +88,9 @@ function assertSameOrigin(request) {
     throw new HttpError(403, "Request origin is not allowed.");
   }
 
-  const expectedOrigin = process.env.APP_ORIGIN ||
-    `${request.socket.encrypted ? "https" : "http"}://${request.headers.host}`;
+  const proto = request.headers ["x-forwarded-proto"] ||(request.socket.encrypted ? "https" : https);
+  const expectedOrigin=
+  process.env.APP_ORIGIN || `${proto}://${request.headers.host}`;
   if (parsedOrigin !== expectedOrigin) {
     throw new HttpError(403, "Request origin is not allowed.");
   }
