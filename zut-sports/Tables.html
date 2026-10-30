@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>League Table &amp; Fixtures | ZUT Sports</title>
+	<link rel="stylesheet" href="CSS/styles.css">
+	<script src="javascript/script.js" defer></script>
+</head>
+<body class="league-page">
+	<header class="site-header">
+		<a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+		<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+		<nav class="navigation" id="mainNav" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="sports.html">Sports</a>
+			<a href="articles.html">Articles</a>
+			<a class="active" href="Tables.html" aria-current="page">League Table</a>
+			<a href="news.html">News &amp; Gallery</a>
+			<a href="login.html">Login</a>
+			<a class="nav-signup" href="signup.html">Sign Up</a>
+		</nav>
+	</header>
+
+	<main class="league-main">
+		<header class="league-heading">
+			<p class="eyebrow">ZUT PREMIER LEAGUE</p>
+			<h1>League Table &amp; Fixtures</h1>
+			<p class="muted">The latest standings and Week Three matches.</p>
+		</header>
+
+		<section class="league-section" aria-labelledby="standings-heading">
+			<h2 id="standings-heading">League Table</h2>
+			<div class="table-scroll">
+				<table class="standings-table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">TEAM</th>
+							<th scope="col">P</th>
+							<th scope="col">W</th>
+							<th scope="col">D</th>
+							<th scope="col">L</th>
+							<th scope="col">GD</th>
+							<th scope="col">PTS</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="leader">
+							<td>1</td>
+							<td class="team-cell"><strong class="team-bubble">L</strong>Legacy FC</td>
+							<td>2</td><td>2</td><td>0</td><td>0</td><td>+4</td><td>6</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td class="team-cell"><strong class="team-bubble">P</strong>Prime Squad</td>
+							<td>2</td><td>1</td><td>1</td><td>0</td><td>+2</td><td>4</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td class="team-cell"><strong class="team-bubble">B</strong>Beng FC</td>
+							<td>2</td><td>1</td><td>0</td><td>1</td><td>0</td><td>3</td>
+						</tr>
+						<tr class="zut">
+							<td>4</td>
+							<td class="team-cell"><strong class="team-bubble">ZW</strong>Zut Warriors</td>
+							<td>2</td><td>1</td><td>0</td><td>1</td><td>0</td><td>3</td>
+						</tr>
+						<tr class="zut">
+							<td>5</td>
+							<td class="team-cell"><strong class="team-bubble">ZB</strong>Zut Ballers</td>
+							<td>2</td><td>0</td><td>1</td><td>1</td><td>-1</td><td>1</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td class="team-cell"><strong class="team-bubble">A</strong>Apex FC</td>
+							<td>2</td><td>0</td><td>1</td><td>1</td><td>-2</td><td>1</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td class="team-cell"><strong class="team-bubble">S</strong>Super Boys</td>
+							<td>2</td><td>0</td><td>1</td><td>1</td><td>-3</td><td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="league-section" aria-labelledby="fixtures-heading">
+			<h2 id="fixtures-heading">Week Three Fixtures</h2>
+			<div class="table-scroll">
+				<table class="fixtures-table">
+					<thead>
+						<tr>
+							<th scope="col">DAY</th>
+							<th scope="col">MATCH</th>
+							<th scope="col">TIME</th>
+							<th scope="col">GROUND</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Wednesday</td><td>Legacy FC vs Prime Squad</td><td>15:00</td><td>Legacy Ground</td></tr>
+						<tr><td>Thursday</td><td>Beng FC vs Apex FC</td><td>15:00</td><td>Beng Stadium</td></tr>
+						<tr><td>Friday</td><td>Legacy FC vs Zut Warriors</td><td>15:00</td><td>Legacy Ground</td></tr>
+						<tr><td>Sunday</td><td>Super Boys vs Zut Ballers</td><td>13:30</td><td>Chisulo Field</td></tr>
+						<tr><td>Sunday</td><td>Prime Squad vs Apex FC</td><td>15:30</td><td>Prime Arena</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+		<nav class="footer-nav" aria-label="Footer navigation">
+			<a href="news.html">News</a><a href="Tables.html">League table</a><a href="login.html">Login</a>
+		</nav>
+		<p class="small">© <span id="year"></span> ZUT Sports</p>
+	</footer>
+</body>
+</html>

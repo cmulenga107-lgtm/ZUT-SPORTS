@@ -3,30 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sports Article | ZUT Sports</title>
+  <meta name="description" content="The goals and key details from LEGACY FC's 8-1 win over APEX FC in the ZUT Premier League.">
+  <title>APEX FC 1-8 LEGACY FC | ZUT Sports</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <script src="javascript/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
-    <a class="back-link" href="index.html">← Back to articles</a>
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+    <nav class="navigation" id="mainNav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sports.html">Sports</a>
+      <a href="articles.html">Articles</a>
+      <a href="Tables.html">League Table</a>
+      <a class="active" href="news.html" aria-current="page">News &amp; Gallery</a>
+      <a href="login.html">Login</a>
+      <a class="nav-signup" href="signup.html">Sign Up</a>
+    </nav>
   </header>
   <main class="article-page">
-    <p class="eyebrow">FOOTBALL • TEAM SPIRIT</p>
-    <h1>Building teamwork on and off the pitch</h1>
-    <p class="muted article-meta">ZUT Sports Editorial • Sample article</p>
-    <div class="article-feature football-art"><span>⚽</span></div>
+    <p class="eyebrow">ZUT PREMIER LEAGUE · 2026</p>
+    <h1>APEX FC 1-8 LEGACY FC</h1>
+    <p class="muted article-meta">Match report · Edson Phiri</p>
+    <img class="article-feature" src="images/tension 2.jpeg" alt="APEX FC and LEGACY FC players contesting the ball">
     <article class="article-copy">
-      <p class="lead">Sport is about more than the final score. It can help students practise communication, discipline, cooperation and leadership.</p>
-      <h2>Working towards a shared goal</h2>
-      <p>In a team environment, every player has a role. Players learn to listen to one another, support teammates and keep working when a challenge arises. These habits can also be useful in group assignments and everyday campus life.</p>
-      <h2>More than the game</h2>
-      <p>Training can encourage time management, commitment and respect. A supportive sports community also gives students an opportunity to meet others and build friendships.</p>
-      <p class="small muted">This is sample template copy. Replace it with a fact-checked article about an actual ZUT team, athlete or event before publishing.</p>
-      <a class="button button-green" href="index.html#articles">Back to all articles</a>
+      <p class="lead">LEGACY FC defeated APEX FC 8-1 in the ZUT Premier League. UCHI C scored APEX FC's goal in the 90th minute.</p>
+      <p>MOSES put Legacy ahead in the 10th minute. JOHNNY scored twice, with goals in the 24th and 45th minutes, and LEGACY FC added five more after the break.</p>
+      <h2>Goal scorers</h2>
+      <ul class="goal-list">
+        <li><strong>APEX FC</strong><span>UCHI C 90'</span></li>
+        <li><strong>LEGACY FC</strong><span>MOSES 10'</span></li>
+        <li><strong>LEGACY FC</strong><span>JOHNNY 24', 45'</span></li>
+        <li><strong>LEGACY FC</strong><span>ABRAHUM 53'</span></li>
+        <li><strong>LEGACY FC</strong><span>POWER 63', 70'</span></li>
+        <li><strong>LEGACY FC</strong><span>GLOOLY 77' (P)</span></li>
+        <li><strong>LEGACY FC</strong><span>CLEMENT 85'</span></li>
+      </ul>
+      <a class="button button-green" href="news.html#reports">Back to league news</a>
     </article>
   </main>
-  <footer class="site-footer"><p>© <span id="year"></span> ZUT Sports</p></footer>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="news.html">News</a><a href="Tables.html">League table</a><a href="login.html">Login</a>
+    </nav>
+    <p class="small">© <span id="year"></span> ZUT Sports</p>
+  </footer>
 </body>
 </html>

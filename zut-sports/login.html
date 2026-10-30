@@ -3,37 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your ZUT Sports account.">
   <title>Login | ZUT Sports</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <script src="javascript/script.js" defer></script>
 </head>
 <body class="auth-page">
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
-    <a class="back-link" href="index.html">← Back to home</a>
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+    <nav class="navigation" id="mainNav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sports.html">Sports</a>
+      <a href="articles.html">Articles</a>
+      <a href="Tables.html">League Table</a>
+      <a href="news.html">News &amp; Gallery</a>
+      <a class="active" href="login.html" aria-current="page">Login</a>
+      <a class="nav-signup" href="signup.html">Sign Up</a>
+    </nav>
   </header>
   <main class="auth-layout">
     <section class="auth-side">
-      <p class="eyebrow">WELCOME BACK</p>
-      <h1>Your sports community is waiting.</h1>
-      <p>Sign-in page template for the ZUT Sports website.</p>
+      <p class="eyebrow">YOUR ZUT SPORTS ACCOUNT</p>
+      <h1>Stay close to the game.</h1>
+      <p>Keep up with league news, fixtures and the teams you follow.</p>
+      <img class="auth-image" src="images/tension 1.jpeg" alt="Players competing in a ZUT football match">
     </section>
     <section class="auth-card">
-      <p class="eyebrow">YOUR ACCOUNT</p>
+      <p class="eyebrow">MEMBER SIGN IN</p>
       <h2>Login</h2>
-      <p class="muted auth-intro">Enter your details below.</p>
+      <p class="muted auth-intro">Enter your account details.</p>
       <form id="loginForm">
         <label for="loginEmail">Email address</label>
         <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
         <label for="loginPassword">Password</label>
-        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" autocomplete="current-password" required minlength="8" maxlength="128">
         <button class="button button-green full-width" type="submit">Login</button>
         <p class="form-message" id="loginMessage" role="status"></p>
       </form>
+      <button class="button button-green full-width" id="logoutButton" type="button" hidden>Sign out</button>
       <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
-      <p class="small muted demo-note">Demo only: this form does not authenticate users.</p>
+      <p class="small muted demo-note">Use a password unique to this local development site.</p>
     </section>
   </main>
-  <footer class="site-footer auth-footer"><p>© <span id="year"></span> ZUT Sports</p></footer>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="news.html">News</a><a href="Tables.html">League table</a><a href="signup.html">Sign up</a>
+    </nav>
+    <p class="small">© <span id="year"></span> ZUT Sports</p>
+  </footer>
 </body>
 </html>

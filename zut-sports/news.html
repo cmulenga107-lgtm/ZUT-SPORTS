@@ -1,277 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="ZUT SPORTS - Match reports, sports photography and outstanding players from the ZUT Premier League.">
-
-    <title>ZUT SPORTS | News & Gallery</title>
-
-        <link rel="stylesheet" href="CSS/styles.css">
+    <meta name="description" content="Match reports, photographs, transfers and player news from the ZUT Premier League.">
+    <title>League News | ZUT Sports</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="javascript/script.js" defer></script>
 </head>
-
-<body>
-
-    <!-- WEBSITE HEADER -->
-
+<body class="news-page">
     <header class="site-header">
-
-        <h1>ZUT SPORTS</h1>
-
-        <nav aria-label="Main navigation">
+        <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+        <nav class="navigation" id="mainNav" aria-label="Main navigation">
             <a href="index.html">Home</a>
-            <a href="news.html" aria-current="page">News & Gallery</a>
+            <a href="sports.html">Sports</a>
+            <a href="articles.html">Articles</a>
+            <a href="Tables.html">League Table</a>
+            <a class="active" href="news.html" aria-current="page">News &amp; Gallery</a>
+            <a href="login.html">Login</a>
+            <a class="nav-signup" href="signup.html">Sign Up</a>
         </nav>
-
     </header>
 
-
-    <!-- MAIN CONTENT -->
-
     <main>
-
-        <!-- LATEST MATCH REPORT -->
-
-        <section id="reports" aria-labelledby="reports-heading">
-
+        <section class="news-index" aria-labelledby="latest-stories-heading">
             <header class="section-header">
-                <p class="eyebrow">ZUT PREMIER LEAGUE 2026</p>
-                <h2 id="reports-heading">Latest Match Report</h2>
-                <p>All the action, results and stories from the league.</p>
+                <p class="eyebrow">ZUT PREMIER LEAGUE · LATEST</p>
+                <h1 id="latest-stories-heading">Latest stories</h1>
+                <p>Select a story to read the full update.</p>
+            </header>
+            <nav class="news-story-list" aria-label="Latest news stories">
+                <a class="news-story-link" href="#reports">
+                    <span class="story-category">MATCH REPORT</span>
+                    <strong class="story-title">APEX FC 1–8 LEGACY FC</strong>
+                    <span class="story-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+                <a class="news-story-link" href="#transfer-news">
+                    <span class="story-category">TRANSFERS</span>
+                    <strong class="story-title">Rodrygo and Power join new clubs</strong>
+                    <span class="story-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+                <a class="news-story-link" href="#injury-news">
+                    <span class="story-category">PLAYER UPDATE</span>
+                    <strong class="story-title">Chisha expected to miss two months</strong>
+                    <span class="story-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+            </nav>
+        </section>
+
+        <section class="news-section" id="reports" aria-labelledby="reports-heading">
+            <header class="section-header">
+                <p class="eyebrow">ZUT PREMIER LEAGUE · 2026</p>
+                <h1 id="reports-heading">The match, in focus</h1>
+                <p>A report from APEX FC against LEGACY FC.</p>
             </header>
 
             <article class="match-report">
-
                 <header class="report-header">
-
-                    <p class="match-status">FULL TIME</p>
-
-                    <h3>APEX FC <span>1 - 8</span> LEGACY FC</h3>
-
-                    <p class="competition">
-                        ZUT Premier League · 2026 Season
-                    </p>
-
+                    <p class="match-status">FULL TIME · ZUT PREMIER LEAGUE</p>
+                    <h2>APEX FC <span>1–8</span> LEGACY FC</h2>
+                    <p class="competition">2026 Season</p>
                 </header>
-
                 <figure class="featured-image">
-
-                    <img
-                        src="images/tension 1.jpeg"
-                        alt="APEX FC versus LEGACY FC match report graphic"
-                    width="400" >
-
-                    <figcaption>
-                        LEGACY FC secured an 8–1 victory over APEX FC.
-                    </figcaption>
-
+                    <img src="images/tension 2.jpeg" alt="APEX FC and LEGACY FC players contesting the ball" fetchpriority="high">
+                    <figcaption>LEGACY FC won 8–1, with eight different scoring moments across the match.</figcaption>
                 </figure>
-
                 <section class="match-summary">
-
-                    <h4>Match Summary</h4>
-
-                    <p>
-                        LEGACY FC delivered an impressive attacking performance
-                        to defeat APEX FC 8–1 in the ZUT Premier League.
-                        UCHI C scored APEX FC's goal, while LEGACY FC produced
-                        eight goals through an outstanding team performance.
-                    </p>
-
+                    <h3>Match Summary</h3>
+                    <p>LEGACY FC beat APEX FC 8–1 in the ZUT Premier League. UCHI C scored for APEX FC in the 90th minute. For LEGACY FC, MOSES opened the scoring before JOHNNY added two goals.</p>
                 </section>
-
-                <section class="goal-summary">
-
-                    <h4>Goal Scorers</h4>
-
-                    <section class="team-scorers">
-
-                        <h5>APEX FC</h5>
-
-                        <p>
-                            UCHI C — 90'
-                        </p>
-
-                    </section>
-
-                    <section class="team-scorers">
-
-                        <h5>LEGACY FC</h5>
-
-                        <ul>
-                            <li>MOSES — 10'</li>
-                            <li>JOHNNY — 24', 45'</li>
-                            <li>ABRAHUM — 53'</li>
-                            <li>POWER — 63', 70'</li>
-                            <li>GLOOLY — 77' (P)</li>
-                            <li>CLEMENT — 85'</li>
-                        </ul>
-
-                    </section>
-
+                <section class="goal-summary" aria-labelledby="goals-heading">
+                    <h3 id="goals-heading">The goals</h3>
+                    <div class="scorer-columns">
+                        <section class="team-scorers">
+                            <h4>APEX FC</h4>
+                            <p>UCHI C <span>90'</span></p>
+                        </section>
+                        <section class="team-scorers">
+                            <h4>LEGACY FC</h4>
+                            <ul>
+                                <li>MOSES <span>10'</span></li>
+                                <li>JOHNNY <span>24', 45'</span></li>
+                                <li>ABRAHUM <span>53'</span></li>
+                                <li>POWER <span>63', 70'</span></li>
+                                <li>GLOOLY <span>77' (P)</span></li>
+                                <li>CLEMENT <span>85'</span></li>
+                            </ul>
+                        </section>
+                    </div>
                 </section>
-
                 <footer class="report-footer">
-
-                    <p>
-                        <strong>Report prepared by:</strong> Edson Phiri
-                    </p>
-
-                    <p>
-                        <strong>Competition:</strong> ZUT Premier League 2026
-                    </p>
-
+                    <p><strong>Report:</strong> Edson Phiri</p>
+                    <a class="read-more" href="article.html">Full match report <span aria-hidden="true">→</span></a>
                 </footer>
-
             </article>
-
         </section>
 
-
-        <!-- MATCH PHOTO GALLERY -->
-
-        <section id="gallery" aria-labelledby="gallery-heading">
-
+        <section class="news-section section-tinted" id="gallery" aria-labelledby="gallery-heading">
             <header class="section-header">
-
-                <p class="eyebrow">BEHIND THE RESULT</p>
-
-                <h2 id="gallery-heading">Match Photo Gallery</h2>
-
-                <p>
-                    The full-time result from the APEX FC versus LEGACY FC match.
-                </p>
-
+                <p class="eyebrow">FROM THE TOUCHLINE</p>
+                <h2 id="gallery-heading">Matchday gallery</h2>
+                <p>Scenes from the APEX FC and LEGACY FC fixture.</p>
             </header>
-
-            <section class="gallery-grid" aria-label="Match gallery">
-
+            <div class="gallery-grid" aria-label="Matchday photographs">
                 <figure class="gallery-item">
-
-                    <img
-                        src="images/apex.jpeg"
-                        alt="Final score graphic showing LEGACY FC defeating APEX FC 8–1"
-                        loading="lazy"
-                    width="400" >
-
-                    <figcaption>
-                        <strong>01.</strong> Full-Time Result
-                        <p>LEGACY FC wins 8–1.</p>
-                    </figcaption>
-
+                    <img src="images/tension 1.jpeg" alt="Two players racing for the ball during a match" loading="lazy">
+                    <figcaption>Chasing the ball down the line</figcaption>
                 </figure>
-
-            </section>
-
+                <figure class="gallery-item">
+                    <img src="images/tension 2.jpeg" alt="Players from both teams competing in midfield" loading="lazy">
+                    <figcaption>Action from the 2026 league fixture</figcaption>
+                </figure>
+                <figure class="gallery-item score-graphic">
+                    <img src="images/apex.jpeg" alt="Full-time graphic showing APEX FC 1–8 LEGACY FC" loading="lazy">
+                    <figcaption>Full-time: APEX FC 1–8 LEGACY FC</figcaption>
+                </figure>
+            </div>
         </section>
-        <!-- TRANSFER NEWS SECTION -->
-<section id="transfer-news" aria-labelledby="transfer-heading">
 
-    <h2 id="transfer-heading">🚨 TRANSFER NEWS | ZUT PREMIER LEAGUE ⚽</h2>
+        <section class="news-section" id="transfer-news" aria-labelledby="transfer-heading">
+            <header class="section-header">
+                <p class="eyebrow">SQUAD UPDATES</p>
+                <h2 id="transfer-heading">Transfer news</h2>
+                <p>Recent signings in the ZUT Premier League.</p>
+            </header>
+            <div class="transfer-container">
+                <article class="transfer-card">
+                    <figure>
+                        <img src="images/WhatsApp Image 2026-10-29 at 12.15.55 (1).jpeg" alt="Rodrygo pictured with club representatives after signing for Super Boys FC" loading="lazy">
+                        <figcaption>
+                            <p class="article-category">CONFIRMED TRANSFER</p>
+                            <h3>Rodrygo joins Super Boys FC</h3>
+                            <p>Super Boys FC have secured the signing of Rodrygo.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="transfer-card">
+                    <figure>
+                        <img class="power-transfer-image" src="images/transfer power.jpeg" alt="Power pictured with club representatives after signing for Legacy FC" loading="lazy">
+                        <figcaption>
+                            <p class="article-category">CONFIRMED TRANSFER</p>
+                            <h3>Power joins Legacy FC</h3>
+                            <p>Power joins Legacy FC as the team prepares for its next challenge.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
 
-    <section class="transfer-container" aria-label="Confirmed transfers">
-
-        <!-- RODRYGO TO SUPER BOYS FC -->
-        <article class="transfer-card">
-
-            <figure>
-                <img
-                    src="images/WhatsApp Image 2026-10-29 at 12.15.55 (1).jpeg"
-                    alt="Rodrygo completing his signing for Super Boys FC"
-                    loading="lazy"
-                width="400">
-
-                <figcaption>
-                    <strong>CONFIRMED TRANSFER</strong>
-                    <h3>Rodrygo Joins Super Boys FC</h3>
-
-                    <p>
-                        Super Boys FC have secured the signing of
-                        Rodrygo, marking a new chapter for the player
-                        and the club.
-                    </p>
-                </figcaption>
-            </figure>
-
-        </article>
-
-        <!-- POWER TO LEGACY FC -->
-        <article class="transfer-card">
-
-            <figure>
-                <img
-                    src="images/transfer power.jpeg"
-                    alt="Power completing his signing for Legacy FC"
-                    loading="lazy"
-                width="400">
-
-                <figcaption>
-                    <strong>CONFIRMED TRANSFER</strong>
-                    <h3>Power Joins Legacy FC</h3>
-
-                    <p>
-                        Power joins Legacy FC, bringing fresh ambition
-                        as the team prepares for its next challenge.
-                    </p>
-                </figcaption>
-            </figure>
-
-        </article>
-
-    </section>
-
-</section>
-
-
-       <section id="injury-news">
-    <h2>🚑 Injury News</h2>
-
-    <article>
-        <h3>ZUT Premier League: Chisha Faces Two Months Out</h3>
-
-        <img src="images/injury.jpeg"
-             alt="Super Boys defender Chisha recovering from injury"
-             width="400">
-
-        <p>
-            Super Boys defender Chisha is expected to be sidelined
-            for approximately two months following an injury.
-            The ZUT Premier League Committee visited the player
-            to show support and wish him a speedy recovery.
-        </p>
-
-        <p>
-            The league has also urged all players to prioritise
-            safety, respect one another, and maintain fair play
-    .       throughout the competition.
-        </p>
-
-        <p><strong>Status:</strong> Expected return in approximately two months.</p>
-    </article>
-</section>
-
-                
-
-            
-
+        <section class="news-section section-tinted" id="injury-news" aria-labelledby="injury-heading">
+            <header class="section-header">
+                <p class="eyebrow">PLAYER UPDATE</p>
+                <h2 id="injury-heading">Chisha expected to miss two months</h2>
+            </header>
+            <article class="injury-report">
+                <img src="images/injury.jpeg" alt="Super Boys defender Chisha during his recovery" loading="lazy">
+                <div>
+                    <p>Super Boys defender Chisha is expected to be sidelined for approximately two months following an injury. The ZUT Premier League Committee visited him to show support and wish him a speedy recovery.</p>
+                    <p>The league has urged players to prioritise safety, respect one another and maintain fair play throughout the competition.</p>
+                    <p class="injury-status"><strong>Status:</strong> Expected return in approximately two months.</p>
+                </div>
+            </article>
+        </section>
     </main>
 
-
-    <!-- WEBSITE FOOTER -->
-
     <footer class="site-footer">
-
-        <p><strong>ZUT SPORTS</strong></p>
-
-        <p>Celebrating competition, teamwork and sporting excellence.</p>
-
-        <p>&copy; 2026 ZUT SPORTS | Edson Phiri</p>
-
+        <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="news.html">News</a><a href="Tables.html">League table</a><a href="login.html">Login</a>
+        </nav>
+        <p class="small">© <span id="year"></span> ZUT Sports</p>
     </footer>
-
 </body>
-
 </html>

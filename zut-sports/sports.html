@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore football, basketball, volleyball and athletics profiles and related guides from ZUT Sports.">
+  <title>Sports at ZUT | ZUT Sports</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script src="javascript/script.js" defer></script>
+</head>
+<body class="sports-page">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
+    <nav class="navigation" id="mainNav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="sports.html" aria-current="page">Sports</a>
+      <a href="articles.html">Articles</a>
+      <a href="Tables.html">League Table</a>
+      <a href="news.html">News &amp; Gallery</a>
+      <a href="login.html">Login</a>
+      <a class="nav-signup" href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sports-hero">
+      <img src="images/tension 2.jpeg" alt="Players competing in a ZUT football match">
+      <div class="sports-hero-copy">
+        <p class="eyebrow">FIND YOUR GAME</p>
+        <h1>One campus.<br>Many ways to play.</h1>
+        <p>Explore the sports currently listed on ZUT Sports and find a guide to help you get started.</p>
+        <a class="button button-gold" href="#sports-directory">Explore sports <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="sports-directory" id="sports-directory" aria-labelledby="sports-heading">
+      <header class="sports-directory-heading">
+        <p class="eyebrow">SPORTS AT ZUT</p>
+        <h2 id="sports-heading">Choose a sport to explore</h2>
+        <p>These profiles connect you to general skill guides and information about each sport.</p>
+      </header>
+
+      <nav class="sport-picker" aria-label="Browse sports">
+        <a href="#football"><span>01</span><strong>Football</strong><span class="sport-arrow" aria-hidden="true">&#8599;</span></a>
+        <a href="#basketball"><span>02</span><strong>Basketball</strong><span class="sport-arrow" aria-hidden="true">&#8599;</span></a>
+        <a href="#volleyball"><span>03</span><strong>Volleyball</strong><span class="sport-arrow" aria-hidden="true">&#8599;</span></a>
+        <a href="#athletics"><span>04</span><strong>Athletics</strong><span class="sport-arrow" aria-hidden="true">&#8599;</span></a>
+      </nav>
+
+      <p class="availability-note"><strong>Availability details are not confirmed.</strong> Please check with ZUT for the official sports list, training times, venues and how to join.</p>
+
+      <div class="sport-detail-list">
+        <article class="sport-detail" id="football">
+          <p class="sport-index">01 <span>TEAM SPORT</span></p>
+          <div>
+            <h3>Football</h3>
+            <p>Build close control, passing and awareness with practice that moves from simple touches to small-sided play.</p>
+            <a class="read-more" href="articles.html#football-guide">Read the first-touch guide <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="sport-detail" id="basketball">
+          <p class="sport-index">02 <span>TEAM SPORT</span></p>
+          <div>
+            <h3>Basketball</h3>
+            <p>Develop ball control, movement and court awareness, then practise applying those skills with a teammate.</p>
+            <a class="read-more" href="articles.html#basketball-guide">Read the ball-control guide <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="sport-detail" id="volleyball">
+          <p class="sport-index">03 <span>TEAM SPORT</span></p>
+          <div>
+            <h3>Volleyball</h3>
+            <p>Work on a consistent serve, accurate passing and communication as you build confidence with the ball.</p>
+            <a class="read-more" href="articles.html#volleyball-guide">Read the serving guide <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="sport-detail" id="athletics">
+          <p class="sport-index">04 <span>INDIVIDUAL EVENTS</span></p>
+          <div>
+            <h3>Athletics</h3>
+            <p>Set a steady training routine, practise event-specific technique and make recovery part of your progress.</p>
+            <a class="read-more" href="articles.html#athletics-guide">Read the training guide <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="articles.html">Articles</a><a href="Tables.html">League table</a><a href="news.html">News</a>
+    </nav>
+    <p class="small">© <span id="year"></span> ZUT Sports</p>
+  </footer>
+</body>
+</html>

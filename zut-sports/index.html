@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ZUT Sports - sports news, teams and stories from ZUT.">
+  <meta name="description" content="Follow ZUT Premier League results, fixtures, transfers and stories from campus sport.">
   <title>ZUT Sports | Home</title>
   <link rel="stylesheet" href="CSS/styles.css">
   <script src="javascript/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">☰</button>
-    <nav class="navigation" id="mainNav">
-      <a class="active" href="index.html">Home</a>
-      <a href="#sports">Sports</a>
-      <a href="#articles">Articles</a>
+    <nav class="navigation" id="mainNav" aria-label="Main navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="sports.html">Sports</a>
+      <a href="articles.html">Articles</a>
+      <a href="Tables.html">League Table</a>
       <a href="news.html">News &amp; Gallery</a>
       <a href="login.html">Login</a>
       <a class="nav-signup" href="signup.html">Sign Up</a>
@@ -25,78 +26,76 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">ZUT • SPORT • COMMUNITY</p>
-        <h1>One campus.<br><span>Many passions.</span></h1>
-        <p>Discover the people, teams and stories shaping sports at ZUT.</p>
+        <p class="eyebrow">ZUT PREMIER LEAGUE · 2026</p>
+        <h1>Sport, made<br>by ZUT.</h1>
+        <p>Follow the teams, matchdays and people shaping sport across our campus.</p>
         <div class="hero-actions">
-          <a class="button button-gold" href="#articles">Read sports stories</a>
-          <a class="button button-outline" href="#sports">Explore sports</a>
+          <a class="button button-gold" href="news.html#reports">Latest match report</a>
+          <a class="button button-outline" href="Tables.html">View league table</a>
         </div>
       </div>
-      <div class="hero-decoration" aria-hidden="true">ZUT</div>
+      <img class="hero-image" src="images/tension 2.jpeg" alt="ZUT Premier League players competing for the ball">
     </section>
 
     <section class="section" id="sports">
       <div class="section-heading">
-        <div><p class="eyebrow">FIND YOUR GAME</p><h2>Explore sports</h2></div>
-        <p class="muted">A place for every sporting passion.</p>
+        <div><p class="eyebrow">ON CAMPUS</p><h2 id="sports-heading">Find your game</h2></div>
+        <a class="read-more" href="sports.html">Browse all sports <span aria-hidden="true">→</span></a>
       </div>
       <div class="sports-grid">
-        <article class="sport-card"><span class="sport-icon">⚽</span><h3>Football</h3><p>Teams, training and match stories.</p></article>
-        <article class="sport-card"><span class="sport-icon">🏀</span><h3>Basketball</h3><p>Players, skills and competitions.</p></article>
-        <article class="sport-card"><span class="sport-icon">🏐</span><h3>Volleyball</h3><p>Teamwork and campus action.</p></article>
-        <article class="sport-card"><span class="sport-icon">🏃</span><h3>Athletics</h3><p>Track events and individual talent.</p></article>
+        <a class="sport-card" href="sports.html#football"><span class="sport-index">01</span><h3>Football</h3><p>Matchdays, teams and campus rivalries.</p></a>
+        <a class="sport-card" href="sports.html#basketball"><span class="sport-index">02</span><h3>Basketball</h3><p>Players, skills and competition.</p></a>
+        <a class="sport-card" href="sports.html#volleyball"><span class="sport-index">03</span><h3>Volleyball</h3><p>Teamwork and campus action.</p></a>
+        <a class="sport-card" href="sports.html#athletics"><span class="sport-index">04</span><h3>Athletics</h3><p>Track events and individual talent.</p></a>
       </div>
-      <p class="small muted note">Template examples only. Replace these with the confirmed list of sports offered at ZUT.</p>
+      <p class="small muted note">Sports shown are examples pending confirmation by ZUT.</p>
     </section>
 
     <section class="section section-tinted" id="articles">
       <div class="section-heading">
-        <div><p class="eyebrow">THE LATEST FROM CAMPUS</p><h2>Sports articles</h2></div>
-        <span class="tag">SAMPLE ARTICLES</span>
+        <div><p class="eyebrow">STUDENT LIFE &amp; SPORT</p><h2>Ideas for your next session</h2></div>
+        <a class="read-more" href="articles.html">All sports articles <span aria-hidden="true">→</span></a>
       </div>
       <div class="articles-grid">
-        <article class="article-card">
-          <div class="article-image football-art" aria-hidden="true"><span>⚽</span></div>
+        <article class="article-card home-guide-card">
           <div class="article-body">
-            <p class="article-category">FOOTBALL • TEAM SPIRIT</p>
-            <h3>Building teamwork on and off the pitch</h3>
-            <p>A sample article about how student athletes develop communication, discipline and teamwork through football.</p>
-            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+            <p class="article-category">STUDENT LIFE</p>
+            <h3>Make room for class, training and rest</h3>
+            <p>Build a weekly routine around lectures, deadlines, practice and recovery.</p>
+            <a class="read-more" href="articles.html#study-and-sport">Read the guide <span aria-hidden="true">→</span></a>
           </div>
         </article>
-        <article class="article-card">
-          <div class="article-image basketball-art" aria-hidden="true"><span>🏀</span></div>
+        <article class="article-card home-guide-card">
           <div class="article-body">
-            <p class="article-category">BASKETBALL • STUDENT LIFE</p>
-            <h3>Balancing sports and academic life</h3>
-            <p>A sample story about managing training, classes, study time and the responsibilities of university life.</p>
-            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+            <p class="article-category">FOOTBALL</p>
+            <h3>Build a more reliable first touch</h3>
+            <p>Simple ways to scan, receive and control the ball under pressure.</p>
+            <a class="read-more" href="articles.html#football-guide">Read the guide <span aria-hidden="true">→</span></a>
           </div>
         </article>
-        <article class="article-card">
-          <div class="article-image athletics-art" aria-hidden="true"><span>🏃</span></div>
+        <article class="article-card home-guide-card">
           <div class="article-body">
-            <p class="article-category">ATHLETICS • INSPIRATION</p>
-            <h3>Small steps towards stronger performances</h3>
-            <p>A sample feature on consistency, preparation and the effort behind an athlete's progress.</p>
-            <a class="read-more" href="article.html">Read article <span aria-hidden="true">→</span></a>
+            <p class="article-category">VOLLEYBALL</p>
+            <h3>Find a repeatable serve</h3>
+            <p>Work on a consistent toss, contact point and target.</p>
+            <a class="read-more" href="articles.html#volleyball-guide">Read the guide <span aria-hidden="true">→</span></a>
           </div>
         </article>
       </div>
-      <p class="small muted note">The articles above are placeholder content, not verified reports of actual ZUT events.</p>
     </section>
 
     <section class="join-banner">
-      <div><p class="eyebrow">BE PART OF THE COMMUNITY</p><h2>Stay connected with ZUT Sports.</h2><p>Sign up to be part of the sports community.</p></div>
-      <a class="button button-gold" href="signup.html">Create an account</a>
+      <div><p class="eyebrow">NEXT UP</p><h2>Know the fixtures. Back your team.</h2><p>Check the upcoming matches in the ZUT Premier League.</p></div>
+      <a class="button button-green" href="Tables.html">View fixtures <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="index.html"><span class="brand-mark">Z</span><span>ZUT <b>SPORTS</b></span></a>
-    <p>Celebrating sport and community at ZUT.</p>
-    <p class="small">© <span id="year"></span> ZUT Sports • Website template</p>
+    <a class="brand" href="index.html"><span class="brand-wordmark"><span class="brand-name">ZUT</span><span class="brand-sports">SPORTS</span></span></a>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="articles.html">Articles</a><a href="news.html">News</a><a href="Tables.html">League table</a>
+    </nav>
+    <p class="small">© <span id="year"></span> ZUT Sports</p>
   </footer>
 </body>
 </html>
