@@ -376,7 +376,7 @@ export function createAuthServer({
 const isMainModule = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMainModule) {
   const port = Number.parseInt(process.env.PORT || "3000", 10);
-  const host = process.env.HOST || "127.0.0.1";
+  const host = process.env.HOST || "0.0.0.0";
   const databasePath = process.env.DATABASE_PATH || resolve(projectRoot, "data", "zut-sports.sqlite");
   const { server, database } = createAuthServer({ databasePath });
 
